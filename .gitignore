@@ -1,0 +1,23 @@
+# ==============================================================================
+# Summa Framework: Ignore Rules
+# ==============================================================================
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Lua / Neovim runtime and cache
+*.luac
+*.log
+.netrwhist
+lazy-lock.json
+.nvim/
+/plugin/
+
+# LSP / Formatting artifacts
+.sumneko_lua/
+.vscode/
