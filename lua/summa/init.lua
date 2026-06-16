@@ -42,6 +42,16 @@ end
 ---@param opts table? User configuration overrides.
 function M.setup(opts)
 	M.config = merge_config(M.config, opts)
+
+	-- Register the global user command for manual cache invalidation
+	vim.api.nvim_create_user_command("SummaCompile", function()
+		require("summa.compiler").purge()
+
+		-- Triggering the colorscheme command forces a cache miss, rebuilding the engine
+		vim.cmd("colorscheme cathedra")
+
+		vim.notify("[Summa Framework] Bytecode cache purged and recompiled successfully.", vim.log.levels.INFO)
+	end, { desc = "Force recompile the Summa Framework bytecode cache" })
 end
 
 --- Retrieves the active, fully consolidated configuration matrix.

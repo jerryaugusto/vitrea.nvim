@@ -40,6 +40,7 @@ if not compiler.load() then
 	-- spec = vim.tbl_extend("force", spec, require("summa.highlights.syntax").get(palette))
 	-- spec = vim.tbl_extend("force", spec, require("summa.highlights.plugins").get(palette, config))
     spec = vim.tbl_extend("force", spec, require("summa.highlights.syntax").get(palette))
+    spec = vim.tbl_extend("force", spec, require("summa.highlights.plugins").get(palette, config))
 
 	-- Trigger the high-performance compiler
 	compiler.compile(spec)

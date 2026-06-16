@@ -105,4 +105,12 @@ function M.load()
 	return false
 end
 
+--- Purges the existing compiled cache from the filesystem.
+--- Required to force a clean regeneration when user configuration changes.
+function M.purge()
+	if vim.fn.filereadable(CACHE_FILE) == 1 then
+		vim.fn.delete(CACHE_FILE)
+	end
+end
+
 return M
