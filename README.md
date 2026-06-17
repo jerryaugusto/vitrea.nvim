@@ -74,7 +74,7 @@ To take the vow of focus and integrate the VITREA engine into your Neovim enviro
 
 ```lua
 {
-  "your-username/vitrea.nvim",
+  "jerryaugusto/vitrea.nvim",
   lazy = false,
   priority = 1000,
   opts = {
@@ -84,7 +84,7 @@ To take the vow of focus and integrate the VITREA engine into your Neovim enviro
   },
   config = function(_, opts)
     require("vitrea").setup(opts)
-    vim.cmd([[colorscheme vitrea]])
+    vim.cmd("colorscheme vitrea")
   end,
 }
 ```
