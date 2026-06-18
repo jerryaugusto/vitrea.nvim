@@ -1,124 +1,194 @@
 <h1 align="center">VITREA</h1>
 
 <p align="center">
-  <em>The architecture of intellectual contemplation. A monastic color paradigm for Neovim designed to isolate the intellect and illuminate logic.</em>
+  <em>The architecture of intellectual contemplation. A monastic environment for Neovim forged to silence entropy, comfort the vision, and illuminate pure logic.</em>
 </p>
 
 <p align="center">
-  <img src="assets/hero-canonical.png" alt="VITREA - The Canonical Environment">
+  <!-- TODO: Insert the Rosette image here -->
+  <img src="assets/vitrea-rosacea.png" alt="VITREA - The Vesper Environment">
 </p>
 
-> "Chaos is the natural rule of the world. Engineering is the monastic imposition of Order."
+> "Chaos and noise are the natural rules of the digital world. Engineering is the monastic imposition of Order. VITREA is the architecture of Silence."
+>
+> **— ORDO ET SILENTIUM**
 
-## I. The Architecture of Intellectual Contemplation
+## I. An Invocation to Silence (The Prologue)
 
-The modern software ecosystem has been corrupted by visual entropy. Commercial color schemes and saturated environments endlessly compete for the engineer's foveal attention, resulting in profound cognitive exhaustion. **VITREA** was forged as the absolute antithesis to this decay.
+Dear artisan, if your steps have led you to these gates, it is probable that your fovea is exhausted. We share in this exact fatigue.
 
-We do not offer a mere color palette; we architect an Environment of Intellectual Contemplation. Designed strictly for the rigorous demands of concurrent systems architecture and heavy backend engineering, VITREA eradicates visual fatigue. It is a monastic state of Deep Work, packaged in high-performance Lua.
+For years, we have navigated a digital ecosystem fractured by visual entropy. Modern development environments frequently treat the screen as a feverish marketplace, filling every available pixel with neon colors, clashing warnings, and artificial boundaries. This *horror vacui*—the dread of empty space—exhausts the intellect and scatters the attention. We understood that our cognitive fatigue was not a failure of the intellect, but an ontological corruption of our tools. The true Intellectual Life demands a sanctuary.
 
-VITREA is not an aesthetic preference; it is a physiological specification. By offloading the burden of syntax parsing to the subconscious processing of specific optical wavelengths, our engine protects your central nervous system's energy, gifting you back hours of raw, unpolluted intellectual stamina.
+We did not aspire to forge a mere "theme"; we yearned for a refuge. We turned our eyes to the master builders of the great cathedrals of the High Middle Ages. They understood that a space dedicated to profound labor must be ordered, proportional, and immersed in silence. Thus, **VITREA** was conceived.
 
----
-
-## II. The Dogmas of Optical Asceticism
-
-The aesthetics of VITREA are born from stringent cognitive psychology and optical physics (*Chromostereopsis*). We adhere to three uncompromising dogmas designed to protect the engineer's foveal bandwidth.
-
-### 1. Chromatic Determinism (The Ontology of Code)
-
-Color strictly dictates the ontological nature of an entity. It is a functional beacon, never a decoration.
-
-* **Passive Infrastructure:** Types, interfaces, and control flow form the structural masonry. They optically recede, providing support without demanding attention.
-* **Active Payloads:** Properties and functions act as the foveal beacon. The engineer tracks the flow of data instantaneously, bypassing the need to read the surrounding syntax.
-* **Critical States:** Banished from standard syntax. They manifest exclusively during active compiler errors or state mutations, utterly eliminating "alarm fatigue."
-
-### 2. Typographic Metaphysics (The Z-Axis)
-
-Font styling operates on the Z-axis, dictating the origin, weight, and teleology of a given entity to prevent visual turbulence.
-
-* **Flat:** The unyielding baseline of logic (variables, standard text).
-* **Bold:** The visual weight of human intent (type definitions, critical errors).
-* **Italic:** Entities not authored by the active user (compiler axioms, external imports, and the marginalia of human thought in comments).
-
-### 3. Visual Brown Noise (Structural Suppression)
-
-Syntax glue—brackets, braces, operators, and inlay hints—is actively suppressed using dense, ashen tones. There are no cages, no artificial boundaries. The UI melts seamlessly into the monolithic substrate.
+VITREA is an invitation to walk with us toward a more deliberate and serene path of forging systems. It is an environment founded upon the classical principles of the *Trivium* (the grammar of syntax, the logic of execution, and the rhetoric of presentation) and the *Quadrivium* (the mathematics and optical physics of proportion), translated into the language of modern compilers. We invite you to rest your vision, silence your intellect, and rediscover the formidable beauty of Aristotelian logic.
 
 ---
 
-## III. The Monolithic Arsenal (Technological Supremacy)
+## II. The Universal Grammar (Architecture in Praxis)
 
-VITREA is not a fragile configuration; it is an uncompromising engine that imposes its will upon the Neovim ecosystem.
+In classical education, the first path of the *Trivium* is Grammar—the profound comprehension of structural rules before dialectics are even applied. The VITREA engine does not merely tint texts; it dissects the Universal Grammar of your code through the precise scalpel of the Abstract Syntax Tree (Tree-sitter).
 
-* **The Premonitory Window (Lexical Parser):** A bespoke Lua parser intercepts raw language server output in real-time, enforcing precise semantic colors and typography. Function parameters are thrust into muted shadows before the syntax is even committed to the buffer.
-* **The ANSI Muzzle (Terminal Subjugation):** Where commercial themes fracture under the chaotic injection of external CLI true-color hex codes, VITREA actively strangles native terminal color channels. Screaming neon outputs are forcibly subdued into our monastic palette.
-* **Dynamic Silence (Conditional UI):** The statusline operates without borders. System metadata recedes into the void. Thermal alerts and LSP fractures only bleed into the visual spectrum when the system's structural integrity is genuinely compromised.
+Whether you are orchestrating concurrent systems in Go, forging memory-safe abstractions in Rust, or mapping generic matrices in TypeScript, the engine imposes the exact and unyielding *Ordo et Silentium*. The visual hierarchy remains absolute across all dialects.
+
+<p align="center">
+  <!-- TODO: Insert the main Golang image here -->
+  <img src="assets/showcase-go.png" alt="VITREA - Golang Architecture" width="100%">
+</p>
+<p align="center">
+  <em>The Vesper State illuminating the backend architecture. Passive structures recede into Lapis; the active intellect advances in Gold.</em>
+</p>
+
+We cordially invite you to examine how our architectural dogmas subjugate the structural chaos of other ecosystems:
+
+<details>
+<summary><b>❖ Contemplate the Rust Forge (Memory Safety & Traits)</b></summary>
+<br>
+<p align="center">
+  <!-- TODO: Insert the Rust image here -->
+  <img src="assets/showcase-rust.png" alt="VITREA - Rust Architecture" width="100%">
+</p>
+<p align="center">
+  <em>Observe how the dense syntax of lifetimes and punctuation is pacified within the shadows of Abbey Dust, permitting the strict logic of ownership to breathe.</em>
+</p>
+</details>
+
+<details>
+<summary><b>❖ Contemplate the TypeScript Matrix (Generics & Interfaces)</b></summary>
+<br>
+<p align="center">
+  <!-- TODO: Insert the TypeScript image here -->
+  <img src="assets/showcase-ts.png" alt="VITREA - TypeScript Architecture" width="100%">
+</p>
+<p align="center">
+  <em>Complex unions and structural generics recede harmoniously into Fresco Lapis, preventing the foveal exhaustion inherent to web ecosystems.</em>
+</p>
+</details>
+
+<details>
+<summary><b>❖ Contemplate the Python Flow (Dynamic Logic)</b></summary>
+<br>
+<p align="center">
+  <!-- TODO: Insert the Python image here -->
+  <img src="assets/showcase-python.png" alt="VITREA - Python Architecture" width="100%">
+</p>
+<p align="center">
+  <em>In the absence of rigid bounding braces, the structural void becomes sovereign. The active intellect is guided purely by the luminance of Tabernacle Gold.</em>
+</p>
+</details>
 
 ---
 
-## IV. The Liturgy of Light (Temporal Shifts)
+## III. The Revelation of the Name: VITREA
 
-VITREA operates on a definitive, canonical foundation. However, acknowledging the physical passage of the sun and the shifting needs of the retina, the engine supports strict liturgical shifts:
+In the Latin tongue, *Vitrea* signifies stained glass.
 
-* **The Canonical State:** The default, uncompromising environment of VITREA. Engineered to mitigate ocular fatigue during dense, sustained code reviews. It assumes warm, calming earthen tones to preserve stamina.
-* **Matina (The Dawn):** An ascetic shift forged for the sacred blocks of early study before 05:00 AM. It embodies the dense texture of parchment beneath the scholar's ink.
-* **Vigil (The Night Watch):** A nocturnal descent designed for immersions of severe architectural engineering. The background merges with the pitch-black void, leaving only the surgical illumination of the syntax.
+When an observer stands within the nave of a cathedral, the raw, blinding light of the outside world does not strike their pupils directly. It is intercepted by the stained glass, refracted, and transmuted into meaning, narrative, and organic warmth.
+
+This is the exact office that our Lua engine exercises upon your code. It captures the aggressive syntax of language servers (LSP) and filters it mathematically. It pacifies the clamorous glare of errors and subjugates the passive masonry, permitting only the *Telos*—the executable purpose that your code narrates—to radiate with clarity and grace.
 
 ---
 
-## V. Installation & Vows
+## IV. The Dogmas of Optical Charity
 
-To take the vow of focus and integrate the VITREA engine into your Neovim environment, utilize your preferred package manager. Installing without configuration immediately invokes the Canonical State.
+Saint Thomas Aquinas postulated that true beauty demands three conditions: *Integritas* (wholeness), *Consonantia* (harmonic proportion), and *Claritas* (radiance or clarity). We have applied these exact philosophical demands to our architecture in an act of profound charity toward the physiology of the engineer.
+
+### 1. Consonantia (Harmonic Proportion)
+
+Color is not a decorative accident; it is the mathematics of light destined to guide, not to distract.
+
+* **The Structural Masonry (Potency):** Types, interfaces, and control flow form the immutable base of your logic. Optically, they recede into cold tones, providing firm sustenance without demanding the sacrifice of your immediate attention.
+* **The Active Intellect (Act):** Properties and methods are the *actus purus* of the system. They advance gently to the foreground, allowing the eye to trace the flow of data instinctively.
+
+### 2. Integritas (The Carthusian Void)
+
+To achieve wholeness, it is imperative to extirpate the superfluous. Punctuation—the syntactic mortar—is suppressed into dense, warmed shades of gray. The frames and borders of floating windows are dissolved. We offer you a *Carthusian* environment of absolute silence, where your logic floats unimpeded over a monolith of obsidian.
+
+### 3. Apatheia (The Pacification of Failure)
+
+Modern editors vociferate against the developer through intrusive virtual texts. VITREA invites the editor to a state of *apatheia*—the serene impassibility of the spirit. We pacify the LSP diagnostics, converting neon shouts into warnings of an oxidized, contained blood, honoring the dignity of the correction without rupturing your contemplative peace.
+
+---
+
+## V. The Physiological Table (The 14 Pillars of the Abbey)
+
+Every hexadecimal foundation in VITREA was distilled through rigorous studies of optical physics. No color was added by chance; the palette finds its perfect *Integritas* in 14 canonical stones, categorically separating the material world (runtime) from the creator plane (compile time).
+
+|   | Nomenclature | Hex | Syntactic and Logical Mapping (AST) | Philosophical and Optical Purpose |
+| :---: | :--- | :--- | :--- | :--- |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23121110" width="60" /> | **Obsidian Nave** | `#121110` | Primary manuscript background. | The visual acoustic silence. Eradicates digital claustrophobia through the absorption of light. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23262423" width="60" /> | **Cloister Shadow** | `#262423` | Pickers, floats, and stealth Inlay Hints. | The contained elevation. Separates UI contexts without breaking the void with rigid boundaries. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23CDC7AB" width="60" /> | **Parchment Linen** | `#CDC7AB` | Standard text, common variables. | The oxidized bone-white. Acts as the neutral subject of the logical premise, preventing retinal halation. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%237E9CD8" width="60" /> | **Fresco Lapis** | `#7E9CD8` | Types, Interfaces, and Primitives. | The cold stone. Recedes structural foundations, supporting the intellect without fatiguing it. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23957FB8" width="60" /> | **Bishop Amethyst**| `#957FB8` | Control flow (`if`, `for`, `return`). | The dialectical Copula. Directs the flow of logical reasoning without the vulgar weight of bold text. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%233E3A38" width="60" /> | **Abbey Dust** | `#3E3A38` | Punctuation, operators, separators, and braces. | The abbey dust. Pushes syntactic mortar to the subliminal periphery of perception. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23B88498" width="60" /> | **Sacrament Rose** | `#B88498` | **Meta-Syntax:** Macros, Decorators, Regex, Escapes. | The compiler's intercession. A dusty magenta, complementary reverse of organic green, isolating the creator sub-language without blinding the vision. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%2365737E" width="60" /> | **Incense Smoke** | `#65737E` | **The Ethereal Text:** Virtual text, ghost completions, and ephemeral LSP injections. | The ethereal presence. A cold, diffuse slate that materializes temporary compiler suggestions without physical weight, vanishing as swiftly as smoke. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23E6C384" width="60" /> | **Tabernacle Gold**| `#E6C384` | Properties, object fields, state keys. | The bonfire of the intellect. Supreme luminous refraction that magnetizes foveal tracking. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%237AA89F" width="60" /> | **Copper Patina** | `#7AA89F` | Standardized functions and methods. | The mechanical act. A mid-tone kinetic energy that guides the eyes along the call graph. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%2398BB6C" width="60" /> | **Olive Gethsemane**| `#98BB6C` | Organic textual strings. | The physiological rest. Seated at the peak of foveal sensitivity (555nm) for instantaneous muscular relief. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23FFA066" width="60" /> | **Vigil Candle** | `#FFA066` | Booleans, constants, and `nil`/`null`. | The amber heat that signals instants of deliberation or absolute state mutation. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%23C34043" width="60" /> | **Martyr Blood** | `#C34043` | Severe LSP diagnostics and logical errors. | The oxidized blood. Banished from common syntax; manifests solely to dictate an unpostponable correction of course. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%232B3328" width="60" /> | **Scribe's Jade** | `#2B3328` | Addition background (Git Diff). | Desaturated moss for the silent and uninterrupted reading of long addition scrolls. |
+| <img src="https://api.iconify.design/material-symbols:circle.svg?color=%233D2B2E" width="60" /> | **Heretic's Ash** | `#3D2B2E` | Deletion background (Git Diff). | Crimson ash to signal the extirpation of code that no longer serves the Order. |
+
+---
+
+## VI. The Integration of the Void (User Interface)
+
+A true monastic engine must not create new and profane colors to adorn the interfaces of explorer plugins (`snacks`, `mini.files`, etc.). Such an act would be yielding to the noise we swore to combat.
+
+VITREA subjugates the entire Neovim ecosystem through the Doctrine of Containment:
+
+* **Boundless Frontiers:** Floating boxes rest upon the tenuous elevation of the *Cloister Shadow*, extirpating the lines that mutilate the workspace.
+* **Silent Footers:** Status lines renounce corporate glare and adopt the absolute obscurity of *Abbey Dust*, presenting metadata as faded monuments that respond only when inquired.
+* **Stealth Hints:** The compiler's Inlay Hints are not painted in warning tones; they meld into the relief of the background, assuming the form of true stealth UI.
+
+---
+
+## VII. Installation and Liturgical Vows
+
+If our philosophy reverberates with your pursuit of excellence in engineering, we fraternally invite you to profess the vows of focus. Integrating the VITREA engine into your Neovim ecosystem is an act of abnegation of distractions.
 
 ### [Lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
 {
-  "jerryaugusto/vitrea.nvim",
-  lazy = false,
-  priority = 1000,
-  opts = {
-    -- The engine requires no fundamental adjustments, 
-    -- but allows for the selection of the liturgical hour.
-    variant = "vesper", -- "matina" | "vesper" | "vigil"
-  },
-  config = function(_, opts)
-    require("vitrea").setup(opts)
-    vim.cmd("colorscheme vitrea")
-  end,
+    "jerryaugusto/vitrea.nvim",
+    lazy = false,
+    priority = 1000,
+    opts = {
+        -- We grant the transmutation of liturgical hours according to the weariness of the sun.
+        liturgy = "vesper", -- "matina" | "vesper" | "vigil"
+    },
+    config = function(_, opts)
+        -- The Vow of Tabula Rasa: to purify the memory before laying the foundations.
+        vim.cmd("highlight clear")
+        vim.cmd("syntax reset")
+
+        require("vitrea").setup(opts)
+        vim.cmd("colorscheme vitrea")
+    end,
 }
 ```
 
 ---
 
-## VI. The Physiological Palette
+## VIII. The Scriptorium (Contributions)
 
-For those who wish to understand the exact optical wavelengths governing their environment, this is the foundation of the canonical VITREA palette:
+In the imposing abbeys of classical antiquity, the *scriptorium* was the consecrated room where manuscripts were zealously transcribed, illuminated, and safeguarded against time. We consider this repository our digital scriptorium, and its doors are open to all intellectuals who share our devotion to the craft of software.
 
-### 1. Canvas & Substrate
+If you wish to submit enhancements to the VITREA engine, we shall receive your contribution with Aristotelian charity. We strictly demand only that your Pull Requests rigidly obey our foundational rule: **Ordo et Silentium**. Every geometric or chromatic addition must be weighed upon the scales of cognitive load; it must obligatorily impose structural rigor or expand the monastic void.
 
-* **Obsidian Nave (`#121110`):** *The monastic silence.* Absorbs excess screen light, providing a grounded physical space that completely eradicates the claustrophobia of typical digital interfaces.
-* **Parchment Linen (`#CDC7AB`):** *Oxidized bone-white.* The primary substrate. Prevents retinal halation, ensuring the core logic tells its story without screaming.
+---
 
-### 2. The Passive Infrastructure
+## IX. The Sharing of Light (License)
 
-* **Fresco Lapis (`#7E9CD8`):** *Cold, recessive blue.* Applied to Types and Interfaces. It cools the eye, signaling to the brain that no logic is executing.
-* **Bishop Amethyst (`#957FB8`):** *Solemn weight.* Cast upon Control Flow keywords to create structural pillars without the reading bumps induced by traditional bold text.
-* **Abbey Dust (`#4A4643`):** *Visual deletion.* Punctuation, brackets, and operators are forced into dense shadows. The infrastructure fuses with the dark, emancipating the code to float freely.
-
-### 3. The Active Intellect
-
-* **Tabernacle Gold (`#E6C384`):** *Advancing foveal beacon.* High luminance mapped exclusively to Properties and Fields, allowing instant tracking of data mutations.
-* **Copper Patina (`#7AA89F`):** *Mid-tone energy.* Tactically marks Functions and Methods, allowing the developer to trace the call graph by pure instinct.
-* **Olive Gethsemane (`#98BB6C`):** *Organic oasis.* Placed precisely at the biological peak of effortless focus (555nm). Applied to Strings and Literals to provide an undeniable biological rest for the retina.
-
-### 4. The Tactical Reserve
-
-* **Vigil Candle (`#FFA066`):** *Amber thermal warning.* Applied to booleans and `nil` to ensure state mutations emit a warning heat, preventing pointer blindness.
-* **Martyr Blood (`#E82424`):** *Compiler rupture.* The ultimate sacrifice, banished from standard syntax. It manifests exclusively during diagnostic errors, guaranteeing an immediate motor response.
+True dialectical knowledge only achieves its purpose when shared. The foundation of VITREA is offered freely to the intellectual community under the **MIT License**. Feel fully authorized to gather these fourteen stones, study our harmonic proportions, and construct, upon them, your own sanctuary of contemplation.
 
 ---
 
 <p align="center">
-  <em>VITREA is an open-source architectural artifact. Pull requests are evaluated strictly on their adherence to the dogmas of optical asceticism.</em>
+  <em>Chaos and noise are the natural rules of the digital world. Engineering is the monastic imposition of Order. VITREA is the architecture of Silence.</em><br><br>
+  <strong>— ORDO ET SILENTIUM —</strong>
 </p>
