@@ -110,9 +110,9 @@ Modern editors vociferate against the developer through intrusive virtual texts.
 
 ---
 
-## V. The Physiological Table (The 14 Pillars of the Abbey)
+## V. The Physiological Table (The 15 Pillars of the Abbey)
 
-Every hexadecimal foundation in VITREA was distilled through rigorous studies of optical physics. No color was added by chance; the palette finds its perfect *Integritas* in 14 canonical stones, categorically separating the material world (runtime) from the creator plane (compile time).
+Every hexadecimal foundation in VITREA was distilled through rigorous studies of optical physics. No color was added by chance; the palette finds its perfect *Integritas* in 15 canonical stones, categorically separating the material world (runtime) from the creator plane (compile time).
 
 |   | Nomenclature | Hex | Syntactic and Logical Mapping (AST) | Philosophical and Optical Purpose |
 | :---: | :--- | :--- | :--- | :--- |
