@@ -1,58 +1,66 @@
 -- ==============================================================================
--- MODULE: Vitrea Framework API (Init)
--- DESCRIPTION: The public-facing configuration contract for the user.
--- Establishes framework defaults and securely merges user-defined overrides.
+-- MODULE: Vitrea Core API
+-- DESCRIPTION: The primary entry point for the Vitrea ecosystem. Orchestrates
+-- user configurations, state management, and the compilation cycle.
 -- ==============================================================================
+
+local compiler = require("vitrea.engine.compiler")
+local config = require("vitrea.config")
 
 local M = {}
 
--- The immutable default configuration contract (The Factory Defaults).
-M.config = {
-	style = "vesper", -- vesper (default), vigil (darker), matina (light)
-	modules = {
-		silence_ansi = true,
-		cmp_integration = "blink.cmp",
-		brown_noise_suppression = true,
-	},
-}
+--- Initializes the ecosystem with user-defined parameters.
+---@param opts table? The user configuration matrix.
+function M.setup(opts)
+	config.setup(opts)
 
---- Securely performs a deep merge of the user configuration with the framework defaults.
----@param default table The baseline Vitrea configuration matrix.
----@param user table? The user-provided overrides.
----@return table The consolidated configuration matrix.
-local function merge_config(default, user)
-	user = user or {}
-	local consolidated = vim.deepcopy(default)
+	-- Register the manual compilation command for the artisan
+	vim.api.nvim_create_user_command("VitreaCompile", function()
+		local success = M.compile()
+		if success then
+			vim.notify("[Vitrea Engine] Architecture recompiled successfully.", vim.log.levels.INFO)
+			vim.cmd("colorscheme vitrea")
+		end
+	end, { desc = "Forces the Vitrea engine to recompile its bytecode cache" })
+end
 
-	for key, value in pairs(user) do
-		if type(value) == "table" and type(consolidated[key]) == "table" then
-			consolidated[key] = merge_config(consolidated[key], value)
-		else
-			consolidated[key] = value
+--- Manually triggers the generation of the bytecode cache.
+---@return boolean success True if compilation finishes without critical errors.
+function M.compile()
+	-- ======================================================================
+	-- THE CACHE BUSTER: Evicts all vitrea modules from Lua's internal memory
+	-- to force a physical read from the disk. Essential for live-reloading.
+	-- ======================================================================
+	for k, _ in pairs(package.loaded) do
+		if k:match("^vitrea") then
+			package.loaded[k] = nil
 		end
 	end
 
-	return consolidated
+	local style = config.options.style
+	local ok, palette = pcall(require, "vitrea.palettes." .. style)
+
+	if not ok then
+		vim.notify("[Vitrea Engine] Critical Error: Failed to locate palette '" .. style .. "'.", vim.log.levels.ERROR)
+		return false
+	end
+
+	local groups = require("vitrea.groups").merge(palette, config.options)
+	groups = require("vitrea.engine.parser").enforce_dialects(groups, palette)
+
+	compiler.purge()
+	compiler.compile(groups, palette)
+
+	return true
 end
 
---- Initializes the Vitrea engine with user-defined parameters.
---- Must be invoked prior to the colorscheme command.
----@param opts table? User configuration overrides.
-function M.setup(opts)
-	M.config = merge_config(M.config, opts)
-
-	-- Register the global user command for manual cache invalidation
-	vim.api.nvim_create_user_command("VitreaCompile", function()
-		require("vitrea.engine.compiler").purge()
-		vim.cmd("colorscheme vitrea")
-		vim.notify("[Vitrea Framework] Bytecode cache purged and recompiled successfully.", vim.log.levels.INFO)
-	end, { desc = "Force recompile the Vitrea Framework bytecode cache" })
-end
-
---- Retrieves the active, fully consolidated configuration matrix.
----@return table
-function M.get_config()
-	return M.config
+--- Loads the visual architecture. Automatically compiles if no cache is present.
+function M.load()
+	if not compiler.load() then
+		-- No cache detected: initiate the first compilation cycle
+		M.compile()
+		compiler.load()
+	end
 end
 
 return M
